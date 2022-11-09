@@ -99,5 +99,5 @@ class music(commands.Cog):
 			await self.playSong(ctx, url)
 			await ctx.send("Играет : " + url)
 
-def setup(client):
-	client.add_cog(music(client))
+async def setup(client):
+	await client.add_cog(music(client))
